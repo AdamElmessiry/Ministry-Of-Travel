@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip Registration Form</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="form.css">
+</head>
+<body class="bg-light">
+
+  <header class="bg-primary text-white text-center py-5 shadow">
+    <h1 class="display-5 fw-bold">Prepare your next trip with me...</h1>
+    <p class="lead">Please take a moment to get in touch, I will get back to you shortly.</p>
+  </header>
+
+  <main class="container my-5">
+    <h2 class="text-center text-primary mb-4">Registration Form</h2>
+
+    <form action="home.html" method="post" enctype="multipart/form-data" class="p-4 bg-white rounded shadow-lg">
+      
+      <div class="mb-3">
+        <label for="fullname" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="fullname" name="fullname" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Muhammad@example.com" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="phone" name="phone">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label d-block">Gender</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="male" name="gender" value="male">
+          <label class="form-check-label" for="male">Male</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="female" name="gender" value="female">
+          <label class="form-check-label" for="female">Female</label>
+        </div>
+      </div>
+
+      <div class="row g-3 mb-3">
+        <div class="col-md-6">
+          <label for="arrive" class="form-label">Arriving Date</label>
+          <input type="date" class="form-control" id="arrive" name="arrive">
+        </div>
+        <div class="col-md-6">
+          <label for="depart" class="form-label">Departure Date</label>
+          <input type="date" class="form-control" id="depart" name="depart">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="profile" class="form-label">Profile Picture</label>
+        <input type="file" class="form-control" id="profile" name="profile">
+      </div>
+
+      <div class="mb-3">
+        <label for="passport" class="form-label">Passport</label>
+        <input type="file" class="form-control" id="passport" name="passport">
+      </div>
+
+      <div class="mb-3">
+        <label for="visa" class="form-label">Visa</label>
+        <input type="file" class="form-control" id="visa" name="visa">
+      </div>
+
+      <div class="mb-3">
+        <label for="governorate" class="form-label">Choose Governorate</label>
+        <select class="form-select" id="governorate" name="governorate" required>
+          <option value="">-- Select a Governorate --</option>
+          <option value="cairo">Cairo</option>
+          <option value="giza">Giza</option>
+          <option value="alexandria">Alexandria</option>
+          <option value="luxor">Luxor</option>
+          <option value="aswan">Aswan</option>
+          <option value="red_sea">Red Sea</option>
+          <option value="south_sinai">South Sinai</option>
+          <option value="north_sinai">North Sinai</option>
+          <option value="ismailia">Ismailia</option>
+          <option value="port_said">Port Said</option>
+          <option value="suez">Suez</option>
+          <option value="dakahlia">Dakahlia</option>
+          <option value="sharqia">Sharqia</option>
+          <option value="qalyubia">Qalyubia</option>
+          <option value="gharbia">Gharbia</option>
+          <option value="monufia">Monufia</option>
+          <option value="beheira">Beheira</option>
+          <option value="kafr_el_sheikh">Kafr El Sheikh</option>
+          <option value="fayoum">Fayoum</option>
+          <option value="beni_suef">Beni Suef</option>
+          <option value="minya">Minya</option>
+          <option value="asyut">Asyut</option>
+          <option value="sohag">Sohag</option>
+          <option value="qena">Qena</option>
+          <option value="matrouh">Matrouh</option>
+          <option value="new_valley">New Valley</option>
+          <option value="damietta">Damietta</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label d-block">Travel Method</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="plane" name="travel" value="plane">
+          <label class="form-check-label" for="plane">Plane</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="train" name="travel" value="train">
+          <label class="form-check-label" for="train">Train</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="bus" name="travel" value="bus">
+          <label class="form-check-label" for="bus">Bus</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="car" name="travel" value="car">
+          <label class="form-check-label" for="car">Car</label>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label d-block">Payment Arrangement</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="booknow" name="payment" value="booknow">
+          <label class="form-check-label" for="booknow">BOOK NOW, PAY NOW</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="deposit" name="payment" value="deposit">
+          <label class="form-check-label" for="deposit">DEPOSIT NOW, PAY INSTALLMENTS</label>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label d-block">Preferred Contact Method</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="emailc" name="contact" value="email">
+          <label class="form-check-label" for="emailc">Email</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="phonec" name="contact" value="phone">
+          <label class="form-check-label" for="phonec">Phone</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="text" name="contact" value="text">
+          <label class="form-check-label" for="text">Text Messaging</label>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="website" class="form-label">Personal Website</label>
+        <input type="url" class="form-control" id="website" name="website">
+      </div>
+
+      <div class="mb-3">
+        <label for="message" class="form-label">Leave a Message</label>
+        <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+      </div>
+
+      <div class="form-check mb-4">
+        <input class="form-check-input" type="checkbox" id="mailing" name="mailing">
+        <label class="form-check-label" for="mailing">Join our mailing list?</label>
+      </div>
+
+      <div class="d-flex justify-content-center gap-3">
+        <button type="submit" class="btn btn-warning fw-bold">Submit</button>
+        <button type="reset" class="btn btn-outline-secondary fw-bold" onclick="window.location.reload();">Reset</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

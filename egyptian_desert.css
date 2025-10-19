@@ -1,0 +1,136 @@
+/* ===============================
+   Background Video
+=============================== */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* ===============================
+   Page Wrapper
+=============================== */
+.page-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===============================
+   Header & Footer
+=============================== */
+.site-header,
+.site-footer {
+  background: rgba(0, 51, 102, 0.85);
+  backdrop-filter: blur(5px);
+  border-radius: 0;
+}
+
+.site-header h1,
+.site-footer p {
+  margin: 0;
+}
+
+/* ===============================
+   Buttons
+=============================== */
+.hover-warning:hover {
+  background-color: #ffcc00 !important;
+  color: #003366 !important;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* ===============================
+   Glassmorphism Card (for Sections)
+=============================== */
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* ===============================
+   Section Headings
+=============================== */
+h2 {
+  color: #003366;
+}
+
+/* ===============================
+   Paragraphs
+=============================== */
+p {
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #222;
+}
+
+/* ===============================
+   Responsive Images
+=============================== */
+.gov-image,
+img {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.gov-image:hover,
+img:hover {
+  transform: scale(1.02);
+}
+
+/* ===============================
+   Footer Styling
+=============================== */
+footer {
+  border-top: 3px solid #ffcc00 !important;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ===============================
+   Content Spacing
+=============================== */
+main {
+  padding-bottom: 2rem;
+}
+
+section {
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* ===============================
+   Small Devices Adjustments
+=============================== */
+@media (max-width: 576px) {
+  .glass-card {
+    padding: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+  }
+  
+  p {
+    font-size: 0.95rem;
+  }
+  
+  .site-header,
+  .site-footer {
+    padding: 0.75rem 1rem;
+  }
+}
